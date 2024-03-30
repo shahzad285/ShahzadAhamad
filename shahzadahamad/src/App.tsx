@@ -1,11 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SideMedu from './components/SideMenu';
+import MainContent from './components/MainContent';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="flex">
+      <div className=''>
+        <SideMedu />
+      </div>
+      <div className='flex-grow'>
+        <MainContent />
+      </div>
     </div>
   );
 }

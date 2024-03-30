@@ -1,0 +1,97 @@
+import { useEffect, useRef, useState } from "react";
+import HiddenMenu from "./HiddenMenu";
+
+export default function SideMedu() {
+    const [showPopupMenu, setShowPopupMenu] = useState(false);
+    const menuRef = useRef<HTMLDivElement>(null);
+    function changeShowPopupMenuFlag() {
+        setShowPopupMenu(true);
+    }
+    
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+                setShowPopupMenu(false);
+            }
+        }
+
+        document.addEventListener("click", handleClickOutside);
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, [menuRef]);
+
+    function handleMenuContainerClick() {
+        // Prevent closing the menu when clicking inside the menu container
+        setShowPopupMenu(true);
+    }
+
+    return <>
+        <div>
+        {showPopupMenu && <HiddenMenu />}
+        </div>
+        <div className="">
+            <div ref={menuRef} onClick={handleMenuContainerClick} className="md:hidden flex items-center menu-sm-container w-full h-14 fixed shadow-lg shadow-zinc-300">
+                <a onClick={changeShowPopupMenuFlag}><img className="ml-4 h-9 w-9 fill-current text-green-300" src="/images/menu.svg" alt="About me" /></a>
+                <a className="w-full flex flex-col items-center" href="#intro">
+                    <span className="text-xl font-medium text-green-700">Shahzad Ahamad</span>
+                    <span className="text-sm font-thin text-purple-900">Full-stack Developer</span>
+                </a>
+            </div>
+
+            <div className="hidden md:block menu-md-container w-48 h-screen fixed border-r-2 shadow-md shadow-slate-300">
+                <ul className="menu-items">
+                    <li className="logo bg-zinc-50  min-h-24 p-7 pb-8 border-b-2">
+                        <a className="w-full" href="#intro">
+                            <p className="text-3xl font-thin text-green-700">Shahzad Ahamad</p>
+                            <span className="text-sm font-thin text-purple-900">Full-stack Developer</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="#about">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/about.svg" alt="About" />
+                            <span className="px-5">About</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="#experience">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/experience.svg" alt="Experience" />
+                            <span className="px-5">Experience</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="#projects">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="Projects" />
+                            <span className="px-5">Projects</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="#skills">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/skills.svg" alt="Skills" />
+                            <span className="px-5">Skills</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="#education">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/education.svg" alt="Education" />
+                            <span className="px-5">Education</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="#contact">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/contact.svg" alt="Contact" />
+                            <span className="px-5">Contact</span>
+                        </a>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <a className="flex items-center pl-5 w-full h-full" href="">
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/resume.svg" alt="About me" />
+                            <span className="px-5">Resume</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </>
+}
