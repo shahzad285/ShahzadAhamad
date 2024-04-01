@@ -8,8 +8,8 @@ const handleItemClick = (item: string) => {
 
 const items = ["Imobisoft", "Careerbuilder", "Finoit Inc", "Infosys"];
 return <>
-    <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">EXPERIENCE</p>
-    <div className="flex justify-center items-center h-screen">
+    <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">Projects</p>
+    <div className="flex justify-center items-center my-24">
         <div className="w-2/5 items-center text-center">
             <ul className="">
             {items.map((item) => (

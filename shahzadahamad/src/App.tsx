@@ -6,7 +6,7 @@ import MainContent from './components/MainContent';
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex scroll-smooth">
       <div className=''>
         <SideMedu />
       </div>

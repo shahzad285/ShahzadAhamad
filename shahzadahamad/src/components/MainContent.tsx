@@ -9,29 +9,26 @@ import Skills from "./Skills";
 export default function MainContent() {
     return <>
         <div className="md:ml-48">
-            <div id="intro" className="flex pt-36 h-screen ml-6">
-               <Intro/>
+            <div id="intro" className="flex pt-36 h-screen ml-6 ">
+                <Intro />
             </div>
-            <div id="about" className=" h-screen">
-                <About/>
+            <div id="about" className=" h-auto">
+                <About />
             </div>
-            <div id="experience" className=" h-screen">
-                <Experience/>
+            <div id="experience" className=" h-auto">
+                <Experience />
             </div>
-            <div id="projects" className=" h-screen">
-                <Projects/>
-
+            <div id="projects" className=" h-auto">
+                <Projects />
             </div>
-            <div id="skills" className=" h-screen">
-               <Skills/>
-
+            <div id="skills" className=" h-auto">
+                <Skills />
             </div>
-            <div id="education" className=" h-screen">
-                <Education/>
-
+            <div id="education" className="h-sauto">
+                <Education />
             </div>
-            <div id="contact" className=" h-screen">
-                <Contact/>
+            <div id="contact" className=" h-auto">
+                <Contact />
             </div>
         </div>
     </>

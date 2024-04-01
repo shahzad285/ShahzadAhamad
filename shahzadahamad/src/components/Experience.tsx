@@ -9,8 +9,8 @@ export default function Experience() {
     const items = ["Imobisoft", "Careerbuilder", "Finoit Inc", "Infosys"];
     return <>
         <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">EXPERIENCE</p>
-        <div className="flex justify-center items-center h-screen">
-            <div className="w-2/5 items-center text-center">
+        <div className="flex justify-center items-center my-24">
+            <div className="hidden md:block w-2/5 items-center text-center">
                 <ul className="">
                 {items.map((item) => (
                             <li
@@ -23,11 +23,11 @@ export default function Experience() {
                         ))}
                 </ul>
             </div>
-            <div className="w-3/5 flex items-center justify-center">
-              <div  className={`${selectedItem==="Imobisoft"?"block":"hidden"}`}>Imobisoft</div>
-              <div className={`${selectedItem==="Careerbuilder"?"block":"hidden"}`}>Careerbuilder</div>
-              <div  className={`${selectedItem==="Finoit Inc"?"block":"hidden"}`}>Finoit Inc</div>
-              <div className={`${selectedItem==="Infosys"?"block":"hidden"}`}>Infosys</div>
+            <div className="w-5/6 md:w-3/5 flex  flex-col items-center justify-center">
+              <div  className={`block md:${selectedItem==="Imobisoft"?"block":"hidden"}`}>Imobisoft</div>
+              <div className={`block md:${selectedItem==="Careerbuilder"?"block":"hidden"}`}>Careerbuilder</div>
+              <div  className={`block md:${selectedItem==="Finoit Inc"?"block":"hidden"}`}>Finoit Inc</div>
+              <div className={`block md:${selectedItem==="Infosys"?"block":"hidden"}`}>Infosys</div>
             </div>
         </div>
     </>
