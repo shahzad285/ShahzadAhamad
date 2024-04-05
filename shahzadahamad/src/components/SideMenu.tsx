@@ -24,17 +24,22 @@ export default function SideMedu() {
 
     function handleMenuContainerClick() {
         // Prevent closing the menu when clicking inside the menu container
-        setShowPopupMenu(true);
+        setShowPopupMenu(!showPopupMenu);
     }
+
+    function closeMenu() {
+        setShowPopupMenu(false);
+    }
+
 
     return <>
         <div>
-        {showPopupMenu && <HiddenMenu />}
+        {showPopupMenu && <HiddenMenu onClose={closeMenu} />}
         </div>
         <div className="">
-            <div ref={menuRef} onClick={handleMenuContainerClick} className="md:hidden flex items-center menu-sm-container w-full h-14 fixed shadow-lg shadow-zinc-300">
-                <a onClick={changeShowPopupMenuFlag}><img className="ml-4 h-9 w-9 fill-current text-green-300" src="/images/menu.svg" alt="About me" /></a>
-                <Link className="w-full flex flex-col items-center" to="about" smooth={true} duration={500}>
+            <div ref={menuRef} onClick={handleMenuContainerClick} className="md:hidden flex items-center menu-sm-container bg-white w-full h-14 fixed shadow-lg shadow-zinc-300">
+                <a onClick={changeShowPopupMenuFlag}><img className="ml-4 h-9 w-9 fill-current text-green-300 cursor-pointer" src="/images/menu.svg" alt="About me" /></a>
+                <Link className="w-full flex flex-col items-center cursor-pointer" to="intro" smooth={true} duration={500}>
                     <span className="text-xl font-medium text-green-700">Shahzad Ahamad</span>
                     <span className="text-sm font-thin text-purple-900">Full-stack Developer</span>
                 </Link>
@@ -49,37 +54,37 @@ export default function SideMedu() {
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full" to="about" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="about" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/about.svg" alt="About" />
                             <span className="px-5">About</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full" to="experience" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="experience" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/experience.svg" alt="Experience" />
                             <span className="px-5">Experience</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full" to="projects" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="projects" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="Projects" />
                             <span className="px-5">Projects</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full" to="skills" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="skills" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/skills.svg" alt="Skills" />
                             <span className="px-5">Skills</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full" to="education" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="education" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/education.svg" alt="Education" />
                             <span className="px-5">Education</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full" to="contact" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="contact" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/contact.svg" alt="Contact" />
                             <span className="px-5">Contact</span>
                         </Link>

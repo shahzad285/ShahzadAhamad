@@ -8,7 +8,7 @@ import Skills from "./Skills";
 
 export default function MainContent() {
     return <>
-        <div className="md:ml-48">
+        <div className="md:ml-48 ">
             <div id="intro" className="flex pt-36 h-screen ml-6 ">
                 <Intro />
             </div>
