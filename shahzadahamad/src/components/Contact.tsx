@@ -1,18 +1,17 @@
+import { FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa'
+import { FaXTwitter} from 'react-icons/fa6'
+import { RiMailLine  } from 'react-icons/ri';
 export default function Contact() {
     return <>
         <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">CONTACT</p>
-        <p className="mx-72 mt-44 mb-24  text-xl">Greetings! I'm Shahzad Ahamad, a seasoned full-stack developer hailing from the vibrant city of Pune, India. With over a decade of hands-on experience in .NET technologies, I've honed my skills to deliver robust and scalable solutions that meet the needs of diverse projects.
-
-            My journey in the world of software development has been enriched with experiences across various domains, empowering me to tackle challenges with innovation and efficiency. While my expertise lies primarily in .NET technologies, I've also embraced modern frameworks like React, leveraging its power to craft dynamic and user-friendly interfaces.
-
-            In addition to my proficiency in frontend and backend development, I bring extensive cloud expertise, particularly in Microsoft Azure. My adeptness with Azure services enables me to architect, deploy, and manage cloud-native applications with ease, ensuring optimal performance and scalability.
-
-            Furthermore, my familiarity with Windows Server environments adds another dimension to my skill set, allowing me to navigate both traditional and cloud-based infrastructures seamlessly.
-
-            I am deeply passionate about leveraging technology to solve real-world problems and thrive in collaborative environments where ideas flourish and innovation thrives.
-
-            Beyond coding, you can find me exploring new technologies, contributing to the developer community, or indulging in the rich cultural tapestry that Pune has to offer.
-
-            Let's connect and explore how we can turn your ideas into reality!</p>
+        <div className='flex flex-col justify-center items-start text-xl font-medium ml-16 md:ml-48 lg:ml-80 mt-48 mb-48'>
+            <div className='space-y-8 '>{/*  So that items start in same vertical line */}
+               <a href="shahzadahamad285@gmail.com"> <div className='flex items-center space-x-10'><div className="bg-teal-500 rounded-full p-5 text-white text-3xl "><RiMailLine/></div> <span className='text-teal-900'>shahzadahamad285@gmail.com</span></div></a>
+               <a href="shahzadahamad285@gmail.com"> <div className='flex items-center space-x-10'><div className="bg-teal-500 rounded-full p-5 text-white text-3xl "><FaXTwitter /></div> <span className='text-teal-900'>twitter.com/Shahzad2805</span> </div></a>
+               <a href=""> <div className='flex items-center space-x-10'><div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaGithub /></div><span className='text-teal-900'>github.com/shahzad285</span></div></a>
+               <a href=""> <div className='flex items-center space-x-10'><div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaLinkedin /></div><span className='text-teal-900'>linkedin.com/in/shahzad-ahamad-80b36662</span></div></a>
+               <a href=""> <div className='flex items-center space-x-10'><div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaDiscord /></div> <span className='text-teal-900'>discordapp.com/users/1178989566292656148</span></div></a>
+            </div>
+        </div>
     </>
 }
