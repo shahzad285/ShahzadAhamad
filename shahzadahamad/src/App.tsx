@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SideMedu from './components/SideMenu';
-import MainContent from './components/MainContent';
+import SideMedu from './pages/SideMenu';
+import MainContent from './pages/MainContent';
 
 function App() {
   return (

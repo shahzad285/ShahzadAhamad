@@ -8,7 +8,7 @@ import Skills from "./Skills";
 
 export default function MainContent() {
     return <>
-        <div className="md:ml-48 ">
+        <div className="md:ml-48 bg-slate-200">
             <div id="intro" className="flex pt-36 h-screen ml-6 ">
                 <Intro />
             </div>
@@ -24,7 +24,7 @@ export default function MainContent() {
             <div id="skills" className=" h-auto">
                 <Skills />
             </div>
-            <div id="education" className="h-sauto">
+            <div id="education" className="h-auto">
                 <Education />
             </div>
             <div id="contact" className=" h-auto">
