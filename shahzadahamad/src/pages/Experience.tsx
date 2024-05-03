@@ -14,7 +14,7 @@ export default function Experience() {
             logo: "logo1",
             name: "Imobisoft · Full-time(Remote)",
             role: "Technical lead",
-            description: "Description about your experience at Imobisoft",
+            description: "Description about your experience at Imobisoft Description about your experience at Imobisoft  Description about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at Imobisoft",
             location: "Coventry, United Kingdom"
         },
         {
@@ -61,9 +61,9 @@ export default function Experience() {
                     ))}
                 </ul>
             </div>
-            <div className="w-5/6 md:w-3/5 flex  flex-col items-center justify-center">
+            <div className="w-5/6 md:w-3/5 flex  flex-col items-center justify-center flex-shrink-0">
                 {experienceData.map((experience, index) => (
-                    <div key={index} className={`block md:${selectedItem === experience.pointer ? "block" : "hidden"}`}>
+                    <div key={index} className={`w-full block md:${selectedItem === experience.pointer ? "block" : "hidden"}`}>
                         <ExperienceCard {...experience} />
                     </div>
                 ))}
