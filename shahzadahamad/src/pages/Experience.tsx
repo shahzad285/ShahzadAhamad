@@ -10,45 +10,58 @@ export default function Experience() {
     const experienceData: ExperienceCardProps[] = [
         {
             pointer: "Imobisoft",
-            experienceTime: "Oct 2020 - Present · 3 yrs 8 mos",
-            logo: "logo1",
-            name: "Imobisoft · Full-time(Remote)",
+            experienceTime: "Oct 2020 - Present",
+            logo: "/images/imobisoft.png",
+            name: "Imobisoft(Remote)",
             role: "Technical lead",
-            description: "Description about your experience at Imobisoft Description about your experience at Imobisoft  Description about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at ImobisoftDescription about your experience at Imobisoft",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
             location: "Coventry, United Kingdom"
         },
         {
             pointer: "Careerbuilder",
-            experienceTime: "Jul 2019 - Oct 2020 · 1 yr 4 mos",
-            logo: "logo2",
-            name: "Careerbuilder Sourcing Solutions · Full-time",
+            experienceTime: "Jul 2019 - Oct 2020",
+            logo: "/images/careerbuilder.png",
+            name: "Careerbuilder India",
             role: "Software engineer 2",
-            description: "Description about your experience at Careerbuilder",
+            description: `Contributed to the development of Workterra, a comprehensive SaaS healthcare solution, utilizing .NET for backend and Angular for frontend.
+                          Collaborated effectively with remote teams, fostering seamless project execution.`,
             location: "Noida, India"
         },
         {
             pointer: "Finoit Inc",
-            experienceTime: "Oct 2017 - Jul 2019 . 1 yr 10 mos",
-            logo: "logo3",
+            experienceTime: "Oct 2017 - Jul 2019",
+            logo: "/images/finoit.png",
             name: "Finoit Inc",
             role: "Senior software engineer",
-            description: "Description about your experience at Finoit Inc",
+            description: `Contributed to FieldCircle, a top-rated field service CRM, streamlining service and maintenance operations.
+                          Worked on EconomyEnergy project, utilizing Umbraco for efficient project management.
+                          Played a pivotal role as a full-stack developer, ensuring successful front-end and back-end development.
+                          Collaborated with diverse teams and contributed across various aspects of software development.`,
             location: "Noida, India "
         },
         {
             pointer: "Infosys",
-            experienceTime: "Jul 2014 - Sep 2017 . 3 yrs 2 mos",
-            logo: "logo4",
+            experienceTime: "Jul 2014 - Sep 2017",
+            logo: "/images/infosys.png",
             name: "Infosys",
             role: "System engineer",
-            description: "Description about your experience at Infosys",
+            description:`Engaged in diverse projects, contributing to system development and enhancing technical competencies.
+                         Collaborated effectively with cross-functional teams to deliver high-quality solutions.
+                         Demonstrated proficiency in problem-solving and adapting to evolving project requirements.`,
             location: "Chandigarh, India"
         }
     ];
     return <>
         <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">EXPERIENCE</p>
         <div className="flex justify-center items-center my-24">
-            <div className="hidden md:block w-2/5 items-center text-center">
+            <div className="hidden lg:block w-2/5 items-center text-center">
                 <ul className="">
                     {experienceData.map((experience, index) => (
                         <li
@@ -61,7 +74,7 @@ export default function Experience() {
                     ))}
                 </ul>
             </div>
-            <div className="w-5/6 md:w-3/5 flex  flex-col items-center justify-center flex-shrink-0">
+            <div className="w-5/6 lg:w-3/5 flex  flex-col items-center justify-center flex-shrink-0">
                 {experienceData.map((experience, index) => (
                     <div key={index} className={`w-full block md:${selectedItem === experience.pointer ? "block" : "hidden"}`}>
                         <ExperienceCard {...experience} />

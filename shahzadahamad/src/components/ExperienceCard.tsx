@@ -2,17 +2,23 @@ export default function ExperienceCard(data: ExperienceCardProps) {
 
     return (
         <div className=" w-9/12 bg-white shadow-lg shadow-slate-400 rounded-lg ">
-            <div className="border-b border-gray-300 mx-3 py-4 px-3 text-sm text-stone-600">{data.experienceTime}</div>
-            <div className="flex justify-between border-b border-gray-300 py-4 px-3 mx-3">
-                <div className="pr-5">{data.logo}</div>
+            <div className="flex justify-between border-b border-gray-300 py-4 px-3 mx-3 align-middle ">
+                <div className="pr-5"><img src={data.logo} alt="" /> </div>
                 <div className="pr-5 font-normal text-3xl text-green-700">{data.name}</div>
                 <div className="text-stone-600 font-semibold">{data.role}</div>
             </div>
-            <div className="border-b border-gray-100 p-4 px-3 mx-3 ml-3 text-gray-700">{data.description}</div>
-            <div className="bg-gray-100 w-full py-4  text-sm px-6 text-gray-700 ">{data.location}</div>
+            <div className="border-b border-gray-100 py-8 pl-10 text-gray-700">{/* Rendering the description as separate paragraphs */}
+                <ul className="list-disc pl-5">
+                    {data.description
+                        .split('\n')
+                        .map((line, index) => {                           
+                                return <li className="py-1" key={index}>{line}</li>                           
+                        })}
+                </ul></div>
+            <div className="bg-gray-100 w-full py-4  text-sm px-6 text-gray-700 ">{data.experienceTime} | {data.location} </div>
 
         </div>
-    
+
 
         // return <div className="card">
         //     <div className="card-content">
