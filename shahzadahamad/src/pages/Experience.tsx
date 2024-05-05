@@ -12,7 +12,8 @@ export default function Experience() {
             pointer: "Imobisoft",
             experienceTime: "Oct 2020 - Present",
             logo: "/images/imobisoft.png",
-            name: "Imobisoft(Remote)",
+            companyLink:"https://www.imobisoft.co.uk/",
+            name: "Imobisoft (Remote)",
             role: "Technical lead",
             description: `Led end-to-end projects.
                           Mentored junior team members.
@@ -28,6 +29,7 @@ export default function Experience() {
             pointer: "Careerbuilder",
             experienceTime: "Jul 2019 - Oct 2020",
             logo: "/images/careerbuilder.png",
+            companyLink:"https://www.careerbuilder.co.in/",
             name: "Careerbuilder India",
             role: "Software engineer 2",
             description: `Contributed to the development of Workterra, a comprehensive SaaS healthcare solution, utilizing .NET for backend and Angular for frontend.
@@ -35,9 +37,10 @@ export default function Experience() {
             location: "Noida, India"
         },
         {
-            pointer: "Finoit Inc",
+            pointer: "Finoit Technologies",
             experienceTime: "Oct 2017 - Jul 2019",
             logo: "/images/finoit.png",
+            companyLink:"https://www.finoit.com/",
             name: "Finoit Inc",
             role: "Senior software engineer",
             description: `Contributed to FieldCircle, a top-rated field service CRM, streamlining service and maintenance operations.
@@ -50,6 +53,7 @@ export default function Experience() {
             pointer: "Infosys",
             experienceTime: "Jul 2014 - Sep 2017",
             logo: "/images/infosys.png",
+            companyLink:"https://www.infosys.com/",
             name: "Infosys",
             role: "System engineer",
             description:`Engaged in diverse projects, contributing to system development and enhancing technical competencies.
@@ -76,22 +80,11 @@ export default function Experience() {
             </div>
             <div className="w-5/6 lg:w-3/5 flex  flex-col items-center justify-center flex-shrink-0">
                 {experienceData.map((experience, index) => (
-                    <div key={index} className={`w-full block md:${selectedItem === experience.pointer ? "block" : "hidden"}`}>
+                    <div key={index} className={`w-full my-14 block lg:${selectedItem === experience.pointer ? "block" : "hidden"}`}>
                         <ExperienceCard {...experience} />
                     </div>
                 ))}
-                {/* <div className={`block md:${selectedItem === "Imobisoft" ? "block" : "hidden"}`}>
-                    Imobisoft
-                </div>
-                <div className={`block md:${selectedItem === "Careerbuilder" ? "block" : "hidden"}`}>
-                    Careerbuilder
-                </div>
-                <div className={`block md:${selectedItem === "Finoit Inc" ? "block" : "hidden"}`}>
-                    Finoit Inc
-                </div>
-                <div className={`block md:${selectedItem === "Infosys" ? "block" : "hidden"}`}>
-                    Infosys
-                </div> */}
+                
             </div>
         </div>
     </>

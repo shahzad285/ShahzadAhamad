@@ -1,10 +1,10 @@
 export default function ExperienceCard(data: ExperienceCardProps) {
 
     return (
-        <div className=" w-9/12 bg-white shadow-lg shadow-slate-400 rounded-lg ">
+        <div className=" w-10/12 bg-white shadow-lg shadow-slate-400 rounded-lg ">
             <div className="flex justify-between border-b border-gray-300 py-4 px-3 mx-3 align-middle ">
-                <div className="pr-5"><img src={data.logo} alt="" /> </div>
-                <div className="pr-5 font-normal text-3xl text-green-700">{data.name}</div>
+                <a href={data.companyLink} target="_blank"><div className="pr-5"><img src={data.logo} alt="" /> </div></a>
+                <a href={data.companyLink}><div className="pr-5 font-normal text-3xl text-green-700">{data.name}</div></a>
                 <div className="text-stone-600 font-semibold">{data.role}</div>
             </div>
             <div className="border-b border-gray-100 py-8 pl-10 text-gray-700">{/* Rendering the description as separate paragraphs */}
@@ -54,6 +54,7 @@ export default function ExperienceCard(data: ExperienceCardProps) {
 export interface ExperienceCardProps {
     pointer: string;
     logo: string;
+    companyLink: string;
     name: string;
     description: string;
     role: string;
