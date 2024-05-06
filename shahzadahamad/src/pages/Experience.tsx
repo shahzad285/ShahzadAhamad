@@ -78,9 +78,9 @@ export default function Experience() {
                     ))}
                 </ul>
             </div>
-            <div className="w-5/6 lg:w-3/5 flex  flex-col items-center justify-center flex-shrink-0">
+            <div className="w-full ml-20 lg:ml-0 lg:w-3/5 flex flex-col items-center justify-center">
                 {experienceData.map((experience, index) => (
-                    <div key={index} className={`w-full my-14 block lg:${selectedItem === experience.pointer ? "block" : "hidden"}`}>
+                    <div key={index} className={`w-full my-10 lg:my-0 block ${selectedItem !== experience.pointer ? "lg:hidden" : ""}`}>
                         <ExperienceCard {...experience} />
                     </div>
                 ))}
