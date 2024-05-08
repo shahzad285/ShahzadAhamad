@@ -10,7 +10,7 @@ function App() {
       <div className=''>
         <SideMedu />
       </div>
-      <div className='flex-grow'>
+      <div className='flex-grow  overflow-x-hidden'>
         <MainContent />
       </div>
     </div>

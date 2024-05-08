@@ -4,7 +4,7 @@ import { RiMailLine } from 'react-icons/ri';
 export default function Contact() {
     return <>
         <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">CONTACT</p>
-        <div className='flex flex-col justify-center items-start text-xl font-medium ml-16 md:ml-48 lg:ml-80 mt-48 mb-48'>
+        <div className='flex flex-col justify-center items-start text-xl font-medium ml-16 md:ml-24 lg:ml-80 mt-48 mb-48'>
             <div className='space-y-8 '>{/*  So that items start in same vertical line */}
                 <div>
                     <a href="mailto:shahzadahamad285@gmail.com?subject=Send email to Shahzad" className='flex items-center space-x-10'><div className="bg-teal-500 rounded-full p-5 text-white text-3xl "><RiMailLine /></div> <span className='text-teal-900 hover:underline'>shahzadahamad285@gmail.com</span></a>
