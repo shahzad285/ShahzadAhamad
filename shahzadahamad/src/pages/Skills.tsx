@@ -10,15 +10,15 @@ const handleItemClick = (item: string) => {
 const skillData: SkillCardProps[] = [
     {
         pointer: "Frontend",
-        skills:["Skill1","Skill2","Skill3"]
+        skills:["HTML","CSS","JavaScript","Typescript","React","Recoil","TailwindCSS"]
     },
     {
         pointer: "Backend",
-        skills:["Skill4","Skill5","Skill6"]
+        skills:["C#","Dotnet","Dotnet core", "SQL","Microsoft SQL Server","Mongo DB","Entity Framework","Entity Framework Core","Linq","Ado.Net","Asp.Net WebAPI","Asp.Net MVC"]
     },
     {
         pointer: "Others",
-        skills:["Skill7","Skill8","Skill9"]
+        skills:["Microsoft Azure","Git","Github","Gitlab","Visual Studio","Visual Studio Code","Sql Server Management Studio","Source tree","Smart git"]
     },
 ];
 return <>
