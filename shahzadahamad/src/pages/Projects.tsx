@@ -1,34 +1,233 @@
 import { useState } from "react";
+import ProjectCard, { ProjectCardProps } from "../components/ProjectCard";
 
-export default function Projects() { 
-    const [selectedItem, setSelectedItem] = useState("Imobisoft");
-const handleItemClick = (item: string) => {
-    setSelectedItem(item);
-};
+export default function Projects() {
 
-const items = ["Imobisoft", "Careerbuilder", "Finoit Inc", "Infosys"];
-return <>
-    <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">Projects</p>
-    <div className="flex justify-center items-center my-24">
-        <div className="w-2/5 items-center text-center">
-            <ul className="">
-            {items.map((item) => (
-                        <li
-                            key={item}
-                            className={`cursor-pointer py-2 ${selectedItem === item ? "text-green-500 font-bold text-xl" : "hover:text-blue-500 hover:font-semibold hover:text-lg"}`}
-                            onClick={() => handleItemClick(item)}
-                        >
-                            {item}
-                        </li>
-                    ))}
-            </ul>
+    const projectData: ProjectCardProps[] = [
+        {
+            name: "UniAdmissions",
+            description: "UniAdmissions helps students in preparing for Oxbridge",
+            skills: ["Docker", "Micro services","ASP.NET Core","Technical Leadership","C#","Microsoft SQL Server"]
+
+        },
+        {
+            name: "Quran app API",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Treasury Today",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Letter app",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Don’t Waste Money",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Hi Force",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "PKU Bite",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "COPDPredict",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Workterra",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Iqnite",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "COPD",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "EconomyEnergy",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Futuretrack",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "FFMS",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "Virtute",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "PMO Dashboard",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        },
+        {
+            name: "NewsLetter Tool",
+            description: `Led end-to-end projects.
+                          Mentored junior team members.
+                          Collaborated with various teams.
+                          Interacted directly with clients for requirement gathering.
+                          Worked extensively on backend operations.
+                          Deployed applications to Windows servers and Azure cloud environments.
+                          Architected Azure for different needs.
+                          Worked on SaaS projects.`,
+            skills: ["skill1", "skill2"]
+
+        }        
+    ];
+
+    return <>
+        <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">Projects</p>
+        <div className=" my-24 flex flex-col items-center justify-center">
+            {projectData.map((project, index) => (
+                <div key={index} className="w-full my-10 lg:my-0 block ">
+                    <ProjectCard {...project} />
+                </div>
+            ))}
         </div>
-        <div className="w-3/5 flex items-center justify-center">
-          <div  className={`${selectedItem==="Imobisoft"?"block":"hidden"}`}>Imobisoft</div>
-          <div className={`${selectedItem==="Careerbuilder"?"block":"hidden"}`}>Careerbuilder</div>
-          <div  className={`${selectedItem==="Finoit Inc"?"block":"hidden"}`}>Finoit Inc</div>
-          <div className={`${selectedItem==="Infosys"?"block":"hidden"}`}>Infosys</div>
-        </div>
-    </div>
-</>
+    </>
 }
