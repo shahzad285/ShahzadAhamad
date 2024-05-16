@@ -6,12 +6,14 @@ export default function Projects() {
     const projectData: ProjectCardProps[] = [
         {
             name: "UniAdmissions",
+            companyLogo: "/images/imobisoft.png",
             description: "UniAdmissions helps students in preparing for Oxbridge",
-            skills: ["Docker", "Micro services","ASP.NET Core","Technical Leadership","C#","Microsoft SQL Server"]
+            skills: ["Docker", "Micro services", "ASP.NET Core", "Technical Leadership", "C#", "Microsoft SQL Server"]
 
         },
         {
             name: "Quran app API",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -25,6 +27,7 @@ export default function Projects() {
         },
         {
             name: "Treasury Today",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -38,6 +41,7 @@ export default function Projects() {
         },
         {
             name: "Letter app",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -51,6 +55,7 @@ export default function Projects() {
         },
         {
             name: "Don’t Waste Money",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -64,6 +69,7 @@ export default function Projects() {
         },
         {
             name: "Hi Force",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -77,6 +83,7 @@ export default function Projects() {
         },
         {
             name: "PKU Bite",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -90,6 +97,7 @@ export default function Projects() {
         },
         {
             name: "COPDPredict",
+            companyLogo: "/images/imobisoft.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -103,6 +111,7 @@ export default function Projects() {
         },
         {
             name: "Workterra",
+            companyLogo: "/images/careerbuilder.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -116,6 +125,7 @@ export default function Projects() {
         },
         {
             name: "Iqnite",
+            companyLogo: "/images/finoit.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -129,6 +139,7 @@ export default function Projects() {
         },
         {
             name: "COPD",
+            companyLogo: "/images/finoit.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -142,6 +153,7 @@ export default function Projects() {
         },
         {
             name: "EconomyEnergy",
+            companyLogo: "/images/finoit.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -155,6 +167,7 @@ export default function Projects() {
         },
         {
             name: "Futuretrack",
+            companyLogo: "/images/finoit.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -168,6 +181,7 @@ export default function Projects() {
         },
         {
             name: "FFMS",
+            companyLogo: "/images/finoit.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -181,6 +195,7 @@ export default function Projects() {
         },
         {
             name: "Virtute",
+            companyLogo: "/images/infosys.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -194,6 +209,7 @@ export default function Projects() {
         },
         {
             name: "PMO Dashboard",
+            companyLogo: "/images/infosys.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -207,6 +223,7 @@ export default function Projects() {
         },
         {
             name: "NewsLetter Tool",
+            companyLogo: "/images/infosys.png",
             description: `Led end-to-end projects.
                           Mentored junior team members.
                           Collaborated with various teams.
@@ -217,17 +234,18 @@ export default function Projects() {
                           Worked on SaaS projects.`,
             skills: ["skill1", "skill2"]
 
-        }        
+        }
     ];
 
     return <>
         <p className="bg-teal-700 text-5xl font-thin pl-10 text-white py-8">Projects</p>
-        <div className=" my-24 flex flex-col items-center justify-center">
-            {projectData.map((project, index) => (
-                <div key={index} className="w-full my-10 lg:my-0 block ">
-                    <ProjectCard {...project} />
-                </div>
-            ))}
-        </div>
+
+<div className="flex flex-col items-center my-10">
+        {projectData.map((project, index) => (
+            <div key={index} className="w-9/12 my-20">
+                <ProjectCard {...project} />
+            </div>
+        ))}
+</div>
     </>
 }
