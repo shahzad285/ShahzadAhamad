@@ -31,7 +31,6 @@ export default function SideMedu() {
         setShowPopupMenu(false);
     }
 
-
     return <>
         <div>
         {showPopupMenu && <HiddenMenu onClose={closeMenu} />}
