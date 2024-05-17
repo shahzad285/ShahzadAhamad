@@ -27,7 +27,7 @@ export default function MainContent() {
             <div id="education" className="h-auto">
                 <Education />
             </div>
-            <div id="contact" className=" h-auto">
+            <div id="contact" className="h-auto">
                 <Contact />
             </div>
         </div>
