@@ -23,7 +23,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20.x"
-      
+          
+      - name: change to src directory
+        run: cd .\shahzadahamad
       - name: Install Dependencies
         run: npm install
         
