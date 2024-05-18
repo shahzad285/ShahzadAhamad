@@ -24,10 +24,9 @@ jobs:
         with:
           node-version: "20.x"
           
-      - name: change to src directory
+      - name: change to src directory and Install Dependencies
         run: cd shahzadahamad
-      - name: Install Dependencies
-        run: npm install
+             npm install
         
       - name: Build And Deploy
         id: builddeploy
