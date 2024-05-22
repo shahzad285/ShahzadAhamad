@@ -8,42 +8,35 @@ export default function Projects() {
             name: "UniAdmissions",
             companyLogo: "/images/imobisoft.png",
             description: "UniAdmissions helps students in preparing for Oxbridge",
-            skills: ["Docker", "Micro services", "ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server"]
+            skills: ["Docker", "Micro services", "ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server","EF Core","Linq"]
 
         },
         {
             name: "Quran app API",
             companyLogo: "/images/imobisoft.png",
             description: "Created APIs for the QuranApp which contains life work of Maulana Wahiduddin",
-            skills: ["ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server"]
+            skills: ["ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server","EF Core","Linq"]
 
         },
         {
             name: "Treasury Today",
             companyLogo: "/images/imobisoft.png",
             description: "Created APIS for Website and CRM. The Treasury Today Group supply the best in international corporate treasury and finance news and intelligence.",
-            skills: ["skill1", "skill2"]
+            skills: ["ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server","SSO Linkedin Login","EF Core","Linq"]
 
         },
         {
             name: "Letter app",
             companyLogo: "/images/imobisoft.png",
             description: "Created APIs for the Letter App, a medical application designed for healthcare professionals to identify injuries and create diagnosis plans.",
-            skills: ["skill1", "skill2"]
+            skills: ["ASP.NET Core API",  "C#", "Microsoft SQL Server","EF Core","Linq"]
 
         },
         {
             name: "Don’t Waste Money",
             companyLogo: "/images/imobisoft.png",
-            description: `Led end-to-end projects.
-                          Mentored junior team members.
-                          Collaborated with various teams.
-                          Interacted directly with clients for requirement gathering.
-                          Worked extensively on backend operations.
-                          Deployed applications to Windows servers and Azure cloud environments.
-                          Architected Azure for different needs.
-                          Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            description: "Led end-to-end projects.",
+            skills: ["ASP.NET Core API","ABP Framework" , "C#", "Microsoft SQL Server","EF Core","Linq"]
 
         },
         {
@@ -56,8 +49,8 @@ export default function Projects() {
                           Worked extensively on backend operations.
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
-                          Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+                          Worked on SaaS projects.  Spire Pdf`,
+            skills: ["ASP.NET Core API","Spire Pdf" , "C#", "Microsoft SQL Server","EF Core","Linq"]
 
         },
         {
@@ -71,7 +64,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["ASP.NET Core Web API","Spire Pdf" , "C#", "Microsoft SQL Server","EF Core","Linq"]
 
         },
         {
@@ -85,7 +78,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["ASP.NET Web API","ADO.NET", "C#", "Microsoft SQL Server"]
 
         },
         {
@@ -99,7 +92,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["ASP.NET Core API","ASP.NET MVC","Angular" , "C#", "Microsoft SQL Server","ADO.Net","SQL Server Profiler"]
 
         },
         {
@@ -113,8 +106,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
-
+            skills: ["ASP.NET Core API","ASP.NET MVC","Angular" , "C#"]
         },
         {
             name: "COPD",
@@ -127,7 +119,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#","ASP.NET Web API","ASP.NET Web MVC", "ADO.Net","Microsoft SQL Server","Stored Procedures","Jquery"]
 
         },
         {
@@ -141,7 +133,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#","ASP.NET Web MVC", "Microsoft SQL Server","Umbraco 7","JQuery","Entity Framework","Linq"]
 
         },
         {
@@ -155,7 +147,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#","ASP.NET Web API","ASP.NET Web MVC", "Linq","Microsoft SQL Server","Stored Procedures","Entity framework"]
 
         },
         {
@@ -169,7 +161,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#","ASP.NET Web API", "Linq","Microsoft SQL Server","Entity framework"]
 
         },
         {
@@ -183,7 +175,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#", "ASP.NET Web MVC","ADO.NET","Microsoft SQL Server","JQuery"]
 
         },
         {
@@ -197,7 +189,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#", "ASP.NET Web MVC","ADO.NET","Microsoft SQL Server","JQuery"]
 
         },
         {
@@ -211,7 +203,7 @@ export default function Projects() {
                           Deployed applications to Windows servers and Azure cloud environments.
                           Architected Azure for different needs.
                           Worked on SaaS projects.`,
-            skills: ["skill1", "skill2"]
+            skills: ["c#", "ASP.NET Web MVC","MongoDB","JQuery"]
 
         }
     ];
