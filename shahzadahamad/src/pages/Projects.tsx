@@ -63,14 +63,14 @@ export default function Projects() {
         {
             name: "COPDPredict",
             companyLogo: "/images/imobisoft.png",
-            description: "",
+            description: "Chronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease that makes it difficult to breathe. I led a SaaS-based project from scratch to completion, integrating it with the NHS system to fetch patient details. This project helps clinicians track the health records of patients and alerts them to probable exacerbations",
             skills: ["ASP.NET Web API","ADO.NET", "C#", "Microsoft SQL Server"]
 
         },
         {
             name: "Workterra",
             companyLogo: "/images/careerbuilder.png",
-            description: "",
+            description: "Workterra is a fully configurable, easy-to-use benefits administration and enrollment platform designed to simplify the growing complexity of benefits for HR and employees. My work included enhancements and maintenance, as well as developing new modules for the platform.",
             skills: ["ASP.NET Core API","ASP.NET MVC","Angular" , "C#", "Microsoft SQL Server","ADO.Net","SQL Server Profiler"]
 
         },
@@ -83,29 +83,29 @@ export default function Projects() {
         {
             name: "COPD",
             companyLogo: "/images/finoit.png",
-            description: "",
+            description: "COPD is a progressive lung disease that makes it difficult to breathe. This project helps clinicians track the condition of patients and indicate probable exacerbations. I added multiple functionalities and provided support and maintenance for the system.",
             skills: ["c#","ASP.NET Web API","ASP.NET Web MVC", "ADO.Net","Microsoft SQL Server","Stored Procedures","Jquery"]
 
         },
         {
             name: "EconomyEnergy",
             companyLogo: "/images/finoit.png",
-            description: "",
+            description: "Economy Energy was a UK-based energy company providing gas and electricity services to residential customers. Known for competitive pricing and straightforward tariffs, the company aimed to make energy more affordable for households. I worked on the CMS Umbraco, adding administrative functionalities and performing maintenance tasks.",
             skills: ["c#","ASP.NET Web MVC", "Microsoft SQL Server","Umbraco 7","JQuery","Entity Framework","Linq"]
 
         },
         {
             name: "Futuretrack",
             companyLogo: "/images/finoit.png",
-            description: "",
+            description: "I worked on performance optimization and enhancements for a project with DJ Workforce, a specialist in vehicle security installation. DJ Workforce operates across some of the UK’s largest commercial fleet vehicles, ensuring top-notch security solutions for their clients. My contributions were aimed at improving system performance and implementing new features to enhance overall functionality.",
             skills: ["c#","ASP.NET Web API","ASP.NET Web MVC", "Linq","Microsoft SQL Server","Stored Procedures","Entity framework"]
 
         },
         {
             name: "FFMS",
             companyLogo: "/images/finoit.png",
-            description: "",
-            skills: ["c#","ASP.NET Web API", "Linq","Microsoft SQL Server","Entity framework"]
+            description: "I worked on the backend of a project involving a Field Force Management System (FFMS). This system is designed to help companies efficiently organize and manage their workforce. By incorporating advanced features, FFMS enables automation, enhances efficiency, and fosters a connected and collaborative work environment. My contributions focused on developing and optimizing backend functionalities to ensure seamless operations and robust performance of the system",
+            skills: ["c#","ASP.NET Web API", "Linq","Microsoft SQL Server","Entity framework","SAAS"]
 
         },
          {
