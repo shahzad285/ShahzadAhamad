@@ -7,7 +7,7 @@ export default function About() {
             <span> I'm Shahzad Ahamad, a passionate Full Stack Developer with expertise in Azure cloud deployments. I have a knack for problem-solving and a love for creating efficient, scalable solutions. From the backend to the frontend, I bring ideas to life.</span>
         </div>
         <div id="profilePhoto" className="hidden lg:block ">
-            <img className="w-full h-auto " src="/images/profilePhoto.webp" alt="" />
+            <img className="w-full h-auto " src="/images/profilePhoto.png" alt="" />
         </div>
     </>
 }
