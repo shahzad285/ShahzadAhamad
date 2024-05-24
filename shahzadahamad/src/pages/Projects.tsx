@@ -73,13 +73,7 @@ export default function Projects() {
             description: "Workterra is a fully configurable, easy-to-use benefits administration and enrollment platform designed to simplify the growing complexity of benefits for HR and employees. My work included enhancements and maintenance, as well as developing new modules for the platform.",
             skills: ["ASP.NET Core API","ASP.NET MVC","Angular" , "C#", "Microsoft SQL Server","ADO.Net","SQL Server Profiler"]
 
-        },
-        {
-            name: "Iqnite",
-            companyLogo: "/images/finoit.png",
-            description: "",
-            skills: ["ASP.NET Core API","ASP.NET MVC","Angular" , "C#"]
-        },
+        },     
         {
             name: "COPD",
             companyLogo: "/images/finoit.png",
