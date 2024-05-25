@@ -48,7 +48,7 @@ const HiddenMenu:React.FC<HiddenMenuProps>=({ onClose })=> {
           <li className="flex py-8 h-12 items-center hover:bg-zinc-100 ">
             <a className="flex items-center pl-5 w-full h-full" href="">
               <img className=" h-6 w-6 fill-current text-green-300" src="/images/resume.svg" alt="About me" />
-              <span className="px-5">Resume</span>
+              <span className="px-5"> <a href="https://drive.google.com/file/d/15Lb8_ow8kqLPBHcvCxlvb9qqev3MaQDh/view">Resume</a></span>
             </a>
           </li>
         </ul>
