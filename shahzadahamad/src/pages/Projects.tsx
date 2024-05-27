@@ -8,7 +8,7 @@ export default function Projects() {
             name: "Nyetimer",
             companyLogo: "/images/imobisoft.png",
             description: "Nyetimber, a renowned English sparkling wine producer. I led the development of Nyetimber's inventory management system and its integration with NetSuite ERP. Implemented Single Sign-On (SSO) using Azure Active Directory (AAD) to enhance security and user experience.",
-            skills: [ "ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server","EF Core","Linq","Netsuite","Git"]
+            skills: [ "ASP.NET Core API", "Technical Leadership", "C#", "Microsoft SQL Server","EF Core","Linq","Netsuite integration","AAD SSO","Git"]
 
         },
         {
