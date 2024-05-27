@@ -63,7 +63,7 @@ export default function Projects() {
         {
             name: "COPDPredict",
             companyLogo: "/images/imobisoft.png",
-            description: "Chronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease that makes it difficult to breathe. I led a SaaS-based project from scratch to completion, integrating it with the NHS system to fetch patient details. This project helps clinicians track the health records of patients and alerts them to probable exacerbations",
+            description: "The COPD Predict Application is a SAAS based predictive healthcare tool designed to assist healthcare professionals and patients in the early detection and management of Chronic Obstructive Pulmonary Disease (COPD). It helps in tracking and predicting possible exacerbation. By gathering comprehensive patient data, including medical history, symptoms, lifestyle factors, and relevant diagnostic test results.",
             skills: ["ASP.NET Web API","ADO.NET", "C#", "Microsoft SQL Server"]
 
         },
