@@ -131,7 +131,7 @@ export default function Projects() {
 
 <div className="flex flex-col items-center my-10">
         {projectData.map((project, index) => (
-            <div key={index} className="w-11/12 md:w-10/12 lg:w-9/12 md my-20">
+            <div key={index} className="w-11/12 md:w-10/12 lg:w-9/12 my-10 md:my-20">
                 <ProjectCard {...project} />
             </div>
         ))}
