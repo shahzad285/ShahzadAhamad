@@ -16,7 +16,7 @@ export default function Contact() {
                     <a href="https://www.github.com/shahzad285" className='flex items-center space-x-10'> <div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaGithub /></div><span className='text-teal-900 hover:underline'>github.com/shahzad285</span></a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/shahzadahamad" className='flex items-center space-x-10'> <div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaLinkedin /></div><span className='text-teal-900 hover:underline'>linkedin.com/in/shahzad-ahamad-80b36662</span></a>
+                    <a href="https://www.linkedin.com/in/shahzadahamad" className='flex items-center space-x-10'> <div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaLinkedin /></div><span className='text-teal-900 hover:underline'>linkedin.com/in/shahzadahamad</span></a>
                 </div>
                 <div>
                     <a href="https://discordapp.com/users/1178989566292656148" className='flex items-center space-x-10'> <div className="bg-teal-500 rounded-full p-5 text-white text-3xl"><FaDiscord /></div> <span className='text-teal-900 hover:underline'>discordapp.com/users/1178989566292656148</span></a>
