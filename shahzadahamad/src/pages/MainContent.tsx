@@ -9,7 +9,7 @@ import Skills from "./Skills";
 export default function MainContent() {
     return <>
         <div className="md:ml-48 bg-slate-200">
-            <div id="intro" className="flex pt-36 h-screen ml-6 ">
+            <div id="intro" className="flex h-full  bg-black">
                 <Intro />
             </div>
             <div id="about" className=" h-auto">
