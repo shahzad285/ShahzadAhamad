@@ -7,7 +7,7 @@ interface HiddenMenuProps{
 const HiddenMenu:React.FC<HiddenMenuProps>=({ onClose })=> {  
   return <>
     <div className="flex w-full h-screen">
-      <div className="z-20  w-48 h-screen fixed bg-white">
+      <div className="z-20 w-48 h-screen fixed bg-white">
         <ul className="menu-items">
           <li className="flex py-8 h-12 items-center hover:bg-zinc-100 ">
             <Link onClick={onClose} className="flex items-center pl-5 w-full h-full cursor-pointer" to="about" smooth={true} duration={500}>
