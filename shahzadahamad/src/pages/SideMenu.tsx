@@ -36,20 +36,20 @@ export default function SideMedu() {
         {showPopupMenu && <HiddenMenu onClose={closeMenu} />}
         </div>
         <div className="">
-            <div ref={menuRef} onClick={handleMenuContainerClick} className="md:hidden flex items-center menu-sm-container bg-white w-full h-14 fixed shadow-lg shadow-zinc-300">
+            <div ref={menuRef} onClick={handleMenuContainerClick} className="z-20 md:hidden flex items-center menu-sm-container bg-white w-full h-14 fixed shadow-lg shadow-zinc-300">
                 <a onClick={changeShowPopupMenuFlag}><img className="ml-4 h-9 w-9 fill-current text-green-300 cursor-pointer" src="/images/menu.svg" alt="About me" /></a>
                 <Link className="w-full flex flex-col items-center cursor-pointer" to="intro" smooth={true} duration={500}>
                     <span className="text-xl font-medium text-green-700">Shahzad Ahamad</span>
-                    <span className="text-sm font-thin text-purple-900">Full-stack Developer</span>
+                    <span className="text-sm font-thin text-purple-900">Full-stackDeveloper</span>
                 </Link>
             </div>
 
-            <div className="hidden md:block menu-md-container w-48 h-screen fixed border-r-2 shadow-md shadow-slate-300">
+            <div className="z-20 hidden md:block menu-md-container w-48 h-screen fixed border-r-2 shadow-md shadow-slate-300">
                 <ul className="menu-items">
                     <li className="logo bg-zinc-50  min-h-24 p-7 pb-8 border-b-2">
                         <Link className="w-full cursor-pointer" to="intro" smooth={true} duration={500}>
                             <p className="text-3xl font-thin text-green-700">Shahzad Ahamad</p>
-                            <span className="text-sm font-thin text-purple-900">Full-stack Developer</span>
+                            <span className="text-sm font-thin text-purple-900">Full-stackDeveloper</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
