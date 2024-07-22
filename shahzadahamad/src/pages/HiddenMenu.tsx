@@ -20,13 +20,7 @@ const HiddenMenu:React.FC<HiddenMenuProps>=({ onClose })=> {
               <img className=" h-6 w-6 fill-current text-green-300" src="/images/experience.svg" alt="About me" />
               <span className="px-5">Experience</span>
             </Link>
-          </li>
-          <li className="flex py-8 h-12 items-center hover:bg-zinc-100 ">
-            <Link onClick={onClose}  className="flex items-center pl-5 w-full h-full cursor-pointer" to="projects" smooth={true} duration={500}>
-              <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="About me" />
-              <span className="px-5">Projects</span>
-            </Link>
-          </li>
+          </li>          
           <li className="flex py-8 h-12 items-center hover:bg-zinc-100 ">
             <Link onClick={onClose}  className="flex items-center pl-5 w-full h-full cursor-pointer" to="skills" smooth={true} duration={500}>
               <img className=" h-6 w-6 fill-current text-green-300" src="/images/skills.svg" alt="About me" />
@@ -37,6 +31,12 @@ const HiddenMenu:React.FC<HiddenMenuProps>=({ onClose })=> {
             <Link onClick={onClose}  className="flex items-center pl-5 w-full h-full cursor-pointer" to="education" smooth={true} duration={500}>
               <img className=" h-6 w-6 fill-current text-green-300" src="/images/education.svg" alt="About me" />
               <span className="px-5">Education</span>
+            </Link>
+          </li>
+          <li className="flex py-8 h-12 items-center hover:bg-zinc-100 ">
+            <Link onClick={onClose}  className="flex items-center pl-5 w-full h-full cursor-pointer" to="projects" smooth={true} duration={500}>
+              <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="About me" />
+              <span className="px-5">Projects</span>
             </Link>
           </li>
           <li className="flex py-8 h-12 items-center hover:bg-zinc-100 ">

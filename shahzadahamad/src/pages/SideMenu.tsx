@@ -63,17 +63,17 @@ export default function SideMedu() {
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/experience.svg" alt="Experience" />
                             <span className="px-5">Experience</span>
                         </Link>
+                    </li>                    
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="skills" smooth={true} duration={500}>
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/skills.svg" alt="Skills" />
+                            <span className="px-5">Skills</span>
+                        </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
                         <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="projects" smooth={true} duration={500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="Projects" />
                             <span className="px-5">Projects</span>
-                        </Link>
-                    </li>
-                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="skills" smooth={true} duration={500}>
-                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/skills.svg" alt="Skills" />
-                            <span className="px-5">Skills</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
