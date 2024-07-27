@@ -29,7 +29,7 @@ return <>
                 {skillData.map((area, index) => (
                     <li
                         key={index}
-                        className={`cursor-pointer py-2 ${selectedItem === area.pointer ? "text-green-500 font-bold text-xl" : "hover:text-blue-500 hover:font-semibold hover:text-lg"}`}
+                        className={`cursor-pointer py-2 ${selectedItem === area.pointer ? "text-green-500 font-bold text-xl" : "hover:text-blue-500 hover:font-semibold hover:scale-125"}`}
                         onClick={() => handleItemClick(area.pointer)}
                     >
                         {area.pointer}

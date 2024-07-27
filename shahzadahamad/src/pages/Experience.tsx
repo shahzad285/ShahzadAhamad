@@ -70,7 +70,7 @@ export default function Experience() {
                     {experienceData.map((experience, index) => (
                         <li
                             key={index}
-                            className={`cursor-pointer py-2 ${selectedItem === experience.pointer ? "text-green-500 font-bold text-xl" : "hover:text-blue-500 hover:font-semibold hover:text-lg"}`}
+                            className={`cursor-pointer py-2 ${selectedItem === experience.pointer ? "text-green-500 font-bold text-xl" : "hover:text-blue-500 hover:font-semibold hover:scale-125"}`}
                             onClick={() => handleItemClick(experience.pointer)}
                         >
                             {experience.pointer}

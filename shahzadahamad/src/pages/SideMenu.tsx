@@ -38,7 +38,7 @@ export default function SideMedu() {
         <div className="">
             <div ref={menuRef} onClick={handleMenuContainerClick} className="z-20 md:hidden flex items-center menu-sm-container bg-white w-full h-14 fixed shadow-lg shadow-zinc-300">
                 <a onClick={changeShowPopupMenuFlag}><img className="ml-4 h-9 w-9 fill-current text-green-300 cursor-pointer" src="/images/menu.svg" alt="About me" /></a>
-                <Link className="w-full flex flex-col items-center cursor-pointer" to="intro" smooth={true} duration={500}>
+                <Link className="w-full flex flex-col items-center cursor-pointer" to="intro" smooth={true} duration={1500}>
                     <span className="text-xl font-medium text-green-700">Shahzad Ahamad</span>
                     <span className="text-sm font-thin text-purple-900">Full-stackDeveloper</span>
                 </Link>
@@ -47,45 +47,46 @@ export default function SideMedu() {
             <div className="z-20 hidden md:block menu-md-container w-48 h-screen fixed border-r-2 shadow-md shadow-slate-300">
                 <ul className="menu-items">
                     <li className="logo bg-zinc-50  min-h-24 p-7 pb-8 border-b-2">
-                        <Link className="w-full cursor-pointer" to="intro" smooth={true} duration={500}>
+                        <Link className="w-full cursor-pointer" to="intro" smooth={true} duration={1500}>
                             <p className="text-3xl font-thin text-green-700">Shahzad Ahamad</p>
                             <span className="text-sm font-thin text-purple-900">Full-stackDeveloper</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="about" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="about" smooth={true} duration={1500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/about.svg" alt="About" />
                             <span className="px-5">About</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="experience" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="experience" smooth={true} duration={1500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/experience.svg" alt="Experience" />
                             <span className="px-5">Experience</span>
                         </Link>
                     </li>                    
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="skills" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="skills" smooth={true} duration={1500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/skills.svg" alt="Skills" />
                             <span className="px-5">Skills</span>
                         </Link>
                     </li>
+                    
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="projects" smooth={true} duration={500}>
-                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="Projects" />
-                            <span className="px-5">Projects</span>
-                        </Link>
-                    </li>
-                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="education" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="education" smooth={true} duration={1500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/education.svg" alt="Education" />
                             <span className="px-5">Education</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
-                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="contact" smooth={true} duration={500}>
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="contact" smooth={true} duration={1500}>
                             <img className=" h-6 w-6 fill-current text-green-300" src="/images/contact.svg" alt="Contact" />
                             <span className="px-5">Contact</span>
+                        </Link>
+                    </li>
+                    <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">
+                        <Link className="flex items-center pl-5 w-full h-full cursor-pointer" to="projects" smooth={true} duration={1500}>
+                            <img className=" h-6 w-6 fill-current text-green-300" src="/images/projects.svg" alt="Projects" />
+                            <span className="px-5">Projects</span>
                         </Link>
                     </li>
                     <li className="flex h-12 items-center hover:bg-zinc-100 hover:border-l-4">

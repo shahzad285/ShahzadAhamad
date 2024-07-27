@@ -20,15 +20,15 @@ export default function MainContent() {
             </div>            
             <div id="skills" className=" h-auto">
                 <Skills />
-            </div>
-            <div id="projects" className=" h-auto">
-                <Projects />
-            </div>
+            </div>            
             <div id="education" className="h-auto">
                 <Education />
             </div>            
             <div id="contact" className="h-auto">
                 <Contact />
+            </div>
+            <div id="projects" className=" h-auto">
+                <Projects />
             </div>
         </div>
     </>
